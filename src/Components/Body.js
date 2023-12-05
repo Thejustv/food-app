@@ -1,9 +1,12 @@
-import Offers from "./Offers";
+import BestOffers from "./BestOffers";
+import CardLayout from "./CardLayout";
 
 function Body(){
-    return (<>
-        
-        <Offers/>
+    const data="Best Offers for you"
+    return (<>       
+        <CardLayout data={data}>
+        <BestOffers/>
+        </CardLayout>
         </>
     )
 }
