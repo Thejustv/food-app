@@ -15,7 +15,7 @@ const resloc=data?.data?.locality;
         <div>
         <div className="w-72 rounded-lg cursor-pointer">
            <img className="rounded-xl object-cover h-48 w-full" src={`${RES_IMG_API}${image_id}`} alt="res-logo"/>
-           <div className="m-2 "> 
+           <div className="m-2"> 
             <h2 className="font-bold">{resname}</h2>
             <p className="font-bold "><FaStar className="inline-block"/> {resstar} - {resminute}mins</p>
             <p className="p-1 truncate">{resmenu}</p>
