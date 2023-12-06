@@ -20,7 +20,7 @@ const BestOffers=()=>{
     return (
         <>
             {imageId.map((item, index)=>{
-                return <img alt="best offers" className="w-[425px] h-[252px]" key={index} src={`${IMG_API}${item.imageId}`}/>
+                return <img alt="best offers" className="w-[425px] h-[252px]" key={item.id} src={`${IMG_API}${item.imageId}`}/>
             })}
         </>
     )
