@@ -16,7 +16,7 @@ const scroll = (direction) => {
   };
  
     return (
-        <div className="grid grid-cols-8 h-80 mt-4 mb-4">
+        <div className="grid grid-cols-8 h-auto mt-4 mb-4">
             <div className="col-start-2 col-span-6">   
                 <div className="flex justify-between m-2 p-2">
                     <h1 className="font-bold text-2xl">{data}</h1>

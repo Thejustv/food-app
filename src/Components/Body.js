@@ -1,6 +1,8 @@
 import BestOffers from "./BestOffers";
 import CardLayout from "./CardLayout";
+import ResList from "./ResList";
 import TopRestaurant from "./TopRestaurant";
+import Footer from "./Footer"
 
 function Body(){
     const data="Best offers for you";
@@ -13,9 +15,9 @@ function Body(){
         <CardLayout data={data2}>
         <TopRestaurant/>
         </CardLayout>
-        <div className="h-20">
-
-        </div>
+        <hr className="mt-5"></hr>
+        <ResList/>
+        <Footer/>
         </>
     )
 }
