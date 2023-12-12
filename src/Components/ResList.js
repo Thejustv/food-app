@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import React,{useEffect, useState } from "react";
 import ResCard from "./ResCard"
 import { RES_API } from "../constants";
+import { Link } from "react-router-dom";
 const ResList=()=>{
 
     const [resId, setResId] = useState([]);
@@ -20,7 +21,7 @@ const ResList=()=>{
         <h1 className="font-bold text-2xl m-2">Restaurants with online food delivery</h1>
         <div className="flex flex-wrap gap-10 m-2 p-2">
             { resId.map(item=>{
-                return <ResCard key={item.info.id} data={item.info}/>
+                return <React.Fragment key={item.info.id}><Link to={`/menu/${item.info.id}`}><ResCard data={item.info} /></Link></React.Fragment>
             })}
         </div>
         </div>
