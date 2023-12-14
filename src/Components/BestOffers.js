@@ -19,7 +19,7 @@ const BestOffers=()=>{
     const dispatch=useDispatch();
 
     const data=useSelector((store)=>store.resapi.data);
-    console.log(data);
+    
   
     useEffect(() => {
       fetchRes();
