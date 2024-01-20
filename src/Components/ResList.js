@@ -8,7 +8,7 @@ const ResList=()=>{
     const fetchRes = async () => {
         const of = await fetch(RES_API);
         const data = await of.json();
-        const fetchedResId = data?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+        const fetchedResId = data?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
         setResId(fetchedResId);
     };
         

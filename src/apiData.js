@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const apiData=createSlice({
-    name :'apidtata',
+    name :'apidata',
     initialState :{
         data:[]
     },

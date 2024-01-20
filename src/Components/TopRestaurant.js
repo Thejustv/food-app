@@ -8,7 +8,7 @@ const [resId, setResId] = useState([]);
 const fetchRes = async () => {
     const of = await fetch(RES_API);
     const data = await of.json();
-    const fetchedResId = data.data.cards[2].card.card.gridElements.infoWithStyle.restaurants;
+    const fetchedResId = data?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
     setResId(fetchedResId);
 };
     
@@ -17,10 +17,11 @@ const fetchRes = async () => {
     }, []);
 
 
-    return(
+    return(<>
+        {resId && 
             resId.map(item=>{
-                return <ResCard key={item.info.id} data={item.info}/>
-            })
+                return <ResCard key={item?.info?.id} data={item?.info}/>
+            })}</>
     )
 }
 
