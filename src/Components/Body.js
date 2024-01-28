@@ -5,7 +5,7 @@ import TopRestaurant from "./TopRestaurant";
 import Footer from "./Footer"
 
 function Body(){
-    const data="Best offers for you";
+    const data="What's on your mind?";
     const data2="Top Restaurant chains near you";
     return (<>       
         <CardLayout data={data}>
