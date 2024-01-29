@@ -5,8 +5,8 @@ const Footer=()=>{
             <div className="h-1/4 bg-slate-100 flex justify-around items-center p-2">
                 <h1 className="font-bold text-3xl text-gray-700">For better experience,download the app now</h1>
                 <div className="flex gap-5">
-                    <img className="h-16 w-52 object-cover" alt="playstore-logo" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/play_store.png"/>
-                    <img className="h-16 w-52 object-cover" alt="appstore-logo" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/app_store.png"/>
+                  <a href="https://play.google.com/store/apps/details?id=in.swiggy.android&referrer=utm_source%3Dswiggy%26utm_medium%3Dheader&pli=1"><img className="h-16 w-52 object-cover" alt="playstore-logo" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/play_store.png"/></a>
+                   <a href="https://apps.apple.com/in/app/swiggy-food-grocery-delivery/id989540920?referrer=utm_source%3Dswiggy%26utm_medium%3Dhomepage"><img className="h-16 w-52 object-cover" alt="appstore-logo" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/app_store.png"/></a>
                 </div>
             </div>
             <div className="h-3/4 bg-black text-white flex gap-8 justify-center">

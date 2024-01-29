@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import React,{ useEffect, useState } from "react";
 import { RES_API } from "../constants";
 import ResCard from "./ResCard";
+import { Link } from "react-router-dom";
 
 function TopRestaurant(){
 
@@ -17,11 +18,13 @@ const fetchRes = async () => {
     }, []);
 
 
-    return(<>
+    return(
+    <>
         {resId && 
             resId.map(item=>{
-                return <ResCard key={item?.info?.id} data={item?.info}/>
-            })}</>
+                return <React.Fragment key={item.info.id}><Link to={`/menu/${item.info.id}`}><ResCard key={item?.info?.id} data={item?.info}/></Link></React.Fragment>
+            })}
+    </>
     )
 }
 
