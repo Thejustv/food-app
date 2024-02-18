@@ -8,6 +8,7 @@ import ResMenu from './Components/ResMenu';
 import Header from './Components/Header';
 import { Provider } from 'react-redux';
 import appStore from './appStore';
+import Help from './Components/Help';
 
 
 const router=createBrowserRouter([
@@ -18,6 +19,10 @@ const router=createBrowserRouter([
   {
     path :"/menu/:id",
     element:<><Header/><ResMenu/></>
+  },
+  {
+    path:"/help",
+    element:<><Header/><Help/></>
   }
 
 ]);

@@ -1,4 +1,4 @@
-import './App.css';
+
 import Header from "./Components/Header.js";
 import Body from './Components/Body.js';
 
@@ -6,7 +6,7 @@ import Body from './Components/Body.js';
 function App() {
 
   return (
-    <div className="App">
+    <div >
      <Header />
      <Body/>
     </div>

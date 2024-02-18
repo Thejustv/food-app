@@ -10,7 +10,9 @@ const ResMenu=()=>{
     
     const fc=MenuList[0]?.card?.card.info;
     const sc=MenuList[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card?.itemCards;
+    const backupsc=MenuList[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.itemCards;
     const title=MenuList[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card?.title;
+    
     useEffect(()=>{
         const fetchMenu=async()=>{
             const menu=await fetch(`${RES_MENU_API}${id}`);
@@ -33,7 +35,10 @@ const ResMenu=()=>{
             <hr></hr>
             <div>
                 <h1 className="font-bold m-2 text-lg">{ sc!= null && title+" ("+sc.length+")"}</h1>
-            { sc!= null? sc.map((item)=>{
+            {
+            sc!= null? sc.map((item)=>{
+            return <MenuCard key={item.card.info.id} item={item.card.info}/>
+         }):backupsc!= null?backupsc.map((item)=>{
             return <MenuCard key={item.card.info.id} item={item.card.info}/>
          }):<div>Error</div>}
          </div>

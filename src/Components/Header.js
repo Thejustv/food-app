@@ -12,7 +12,7 @@ const Header=()=>{
             <div className="p-2">
                 <ul className="flex text-lg hover:cursor-pointer m-4 gap-16">
                 <li><FiSearch className="inline-block mr-2"/>Search</li>
-                <li><LuHelpCircle className="inline-block mr-2"/>Help</li>
+               <Link to={"/help"}> <li><LuHelpCircle className="inline-block mr-2"/>Help</li></Link>
                 <li><VscAccount className="inline-block  mr-2"/>Sign in</li>
                 <li className="mr-6"><IoCartOutline className="inline-block mr-2"/>Cart</li>
                 </ul>

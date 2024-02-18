@@ -9,10 +9,6 @@ const BestOffers=()=>{
     const [imageId, setImageId] = useState([]);
     const dispatch=useDispatch();
   
-   
-
-    
-
    // const data=useSelector((store)=>store.resapi.data);
     
   
